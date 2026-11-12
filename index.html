@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeel Jewellers | Fashion Jewellery</title>
+    <meta name="description" content="Necklaces, bracelets, rings and gift sets in gold tones and soft stones. Order on WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo-symbol.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar" aria-label="Main">
+            <a href="#home" class="logo" aria-label="Adeel Jewellers home">
+                <img class="logo-mark" src="logo-symbol-light.png" alt="">
+                <span class="logo-name">Adeel Jewellers</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cart-open" type="button" aria-label="Open cart">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+                <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="progress" id="progress" aria-hidden="true"></div>
+    </header>
+
+
+    <!-- 1. Hero: the arch opens into the full photo as you scroll -->
+    <section id="home" class="hero">
+        <div class="hero-stage">
+            <h1 class="hero-title">
+                <span class="hl hl-a"><span class="hl-in">Small pieces,</span></span>
+                <span class="hl hl-b"><span class="hl-in">worn every day.</span></span>
+            </h1>
+
+            <div class="hero-arch-intro">
+                <div class="hero-arch">
+                    <img src="hero-heart.jpg" alt="Gold heart pendant necklace on champagne satin">
+                    <div class="hero-veil" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <div class="hero-aux">
+                <p class="hero-sub">Necklaces, bracelets, rings and gift sets in gold tones and soft stones.</p>
+                <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+            </div>
+        </div>
+
+        <div class="hero-cap">
+            <p class="cap-name">Heart Pendant Necklace <b>Rs. 999</b></p>
+            <div class="cap-actions">
+                <a href="#shop" class="btn btn-light">Shop jewellery</a>
+                <a href="#collections" class="btn btn-ghost">See collections</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 2. Statement: words light up as you scroll -->
+    <section class="statement">
+        <p class="statement-text" id="statement-text">Fashion jewellery for the days that matter, and the ones that don't. Soft gold tones, small stones, ready to gift.</p>
+    </section>
+
+
+    <!-- 3. Collections: the whole screen changes colour per collection -->
+    <section id="collections" class="collections">
+        <div class="coll-pin">
+            <div class="coll-bg" aria-hidden="true"></div>
+
+            <article class="coll coll-1" style="--c:#264438; --fg:#f5f6f1; --fg2:rgba(245,246,241,.78); --btn-bg:#f5f6f1; --btn-fg:#264438;">
+                <div class="coll-text">
+                    <ol class="coll-steps" aria-label="Collections"><li class="on">Heart</li><li>Swan</li><li>Blossom</li></ol>
+                    <h2>The Heart Collection</h2>
+                    <p>A ring, a bracelet and a pendant, each shaped as an open heart. Light enough to wear every day.</p>
+                    <p class="coll-price">From Rs. 699</p>
+                    <a href="#shop" class="btn btn-fill">Shop hearts</a>
+                </div>
+                <div class="coll-visual">
+                    <div class="coll-arch arch"><img src="jewellery3.jpg" alt="Gold heart ring on a hand"></div>
+                    <div class="coll-orb"><img src="jewellery2.jpg" alt="Gold heart bracelet on a wrist"></div>
+                </div>
+            </article>
+
+            <article class="coll coll-2" style="--c:#7c8c68; --fg:#0d1a15; --fg2:rgba(13,26,21,.8); --btn-bg:#0d1a15; --btn-fg:#f5f6f1;">
+                <div class="coll-text">
+                    <ol class="coll-steps" aria-label="Collections"><li>Heart</li><li class="on">Swan</li><li>Blossom</li></ol>
+                    <h2>The Elegant Swan Collection</h2>
+                    <p>Crystal swans in black and lavender, as a pendant or a full set. A little more special.</p>
+                    <p class="coll-price">Rs. 1,499</p>
+                    <a href="#shop" class="btn btn-fill">Shop swans</a>
+                </div>
+                <div class="coll-visual">
+                    <div class="coll-arch arch"><img src="jewellery6.jpg" alt="Black crystal swan pendant necklace in a display box"></div>
+                    <div class="coll-orb"><img src="jewellery7.jpg" alt="Lavender swan set on grey satin"></div>
+                </div>
+            </article>
+
+            <article class="coll coll-3" style="--c:#e4e9dc; --fg:#182c24; --fg2:rgba(24,44,36,.8); --btn-bg:#264438; --btn-fg:#f5f6f1;">
+                <div class="coll-text">
+                    <ol class="coll-steps" aria-label="Collections"><li>Heart</li><li>Swan</li><li class="on">Blossom</li></ol>
+                    <h2>Pink Stone Blossoms</h2>
+                    <p>Pink stones set along a gold-tone vine. A bracelet to wear alone, or a set to gift.</p>
+                    <p class="coll-price">From Rs. 1,699</p>
+                    <a href="#shop" class="btn btn-fill">Shop blossoms</a>
+                </div>
+                <div class="coll-visual">
+                    <div class="coll-arch arch"><img src="jewellery9.jpg" alt="Pink stone necklace, bracelet and earrings on marble"></div>
+                    <div class="coll-orb"><img src="jewellery8.jpg" alt="Gold bracelet with pink stones"></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- 4. Detail: lines draw to each piece in the swan set -->
+    <section id="detail" class="detail">
+        <div class="detail-pin">
+            <div class="detail-text">
+                <h2>Four pieces, one look</h2>
+                <p>The Swan Necklace Set in lavender stones on gold tone. The photo shows every piece. Message us on WhatsApp to confirm what comes in the box.</p>
+                <ol class="detail-list" id="detail-list">
+                    <li>Swan ring</li>
+                    <li>Swan studs</li>
+                    <li>Swan pendant</li>
+                    <li>Adjustable bracelet</li>
+                </ol>
+                <div class="detail-buy">
+                    <span class="price">Rs. 1,499</span>
+                    <button class="add-btn" type="button" data-add data-name="Swan Necklace set" data-price="1499" data-img="jewellery7.jpg">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="detail-photo" id="detail-photo">
+                <div class="detail-img arch"><img src="jewellery7.jpg" alt="Lavender swan ring, earrings, pendant necklace and bracelet on grey satin"></div>
+                <div class="co r" style="--x:50; --y:29"><i class="dot"></i><span class="line"></span><span class="label">Swan ring</span></div>
+                <div class="co l" style="--x:46; --y:51"><i class="dot"></i><span class="line"></span><span class="label">Swan studs</span></div>
+                <div class="co r" style="--x:66; --y:80"><i class="dot"></i><span class="line"></span><span class="label">Swan pendant</span></div>
+                <div class="co l" style="--x:47; --y:87"><i class="dot"></i><span class="line"></span><span class="label">Adjustable bracelet</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. Shop: sideways scroll on desktop, a grid on phones -->
+    <section id="shop" class="shop">
+        <div class="shop-pin">
+            <div class="shop-track" id="shop-track">
+                <div class="shop-intro">
+                    <h2>Shop all jewellery</h2>
+                    <p>Add pieces to your cart, fill your details, and place the order. We deliver with Cash on Delivery.</p>
+                </div>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery1.jpg" alt="Bow necklace and earrings set in a pink gift box" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Bow Necklace &amp; Earrings Set</h3>
+                        <p class="price">Rs. 1,499</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Bow Necklace & Earrings Set" data-price="1499" data-img="jewellery1.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery2.jpg" alt="Gold heart bracelet on a wrist" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Heart Bracelet</h3>
+                        <p class="price">Rs. 899</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Heart Bracelet" data-price="899" data-img="jewellery2.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery3.jpg" alt="Gold heart ring on a hand" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Heart Ring</h3>
+                        <p class="price">Rs. 699</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Heart Ring" data-price="699" data-img="jewellery3.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery4.jpg" alt="Heart pendant necklace on satin" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Heart Pendant Necklace</h3>
+                        <p class="price">Rs. 999</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Heart Pendant Necklace" data-price="999" data-img="jewellery4.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery5.jpg" alt="Gold infinity necklace on soft fabric" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Infinity Necklace</h3>
+                        <p class="price">Rs. 1,299</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Infinity Necklace" data-price="1299" data-img="jewellery5.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery6.jpg" alt="Black crystal swan pendant necklace in a display box" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Swan Pendant Necklace</h3>
+                        <p class="price">Rs. 1,499</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Swan Pendant Necklace" data-price="1499" data-img="jewellery6.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery7.jpg" alt="Lavender swan necklace, earrings and ring on grey satin" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Swan Necklace Set</h3>
+                        <p class="price">Rs. 1,499</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Swan Necklace set" data-price="1499" data-img="jewellery7.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery8.jpg" alt="Gold bracelet with pink stones" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Pink Stone Bracelet</h3>
+                        <p class="price">Rs. 1,799</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Pink Stone Bracelet" data-price="1799" data-img="jewellery8.jpg">Add to cart</button>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-image arch"><img src="jewellery9.jpg" alt="Pink stone necklace, bracelet and earrings on marble" loading="lazy"></div>
+                <div class="product-info">
+                    <div>
+                        <h3>Stone Bracelet Set</h3>
+                        <p class="price">Rs. 1,699</p>
+                    </div>
+                    <button class="add-btn" type="button" data-add data-name="Stone Bracelet Set" data-price="1699" data-img="jewellery9.jpg">Add to cart</button>
+                </div>
+            </article>
+            </div>
+            <div class="shop-progress" aria-hidden="true"><i id="shop-bar"></i></div>
+        </div>
+    </section>
+
+
+    <!-- 6. Finale -->
+    <section id="about" class="finale">
+        <div class="finale-stage">
+            <h2 class="finale-big" aria-label="Gift something small.">
+                <span class="fw" aria-hidden="true"><span class="fw-in">Gift</span></span>
+                <span class="fw" aria-hidden="true"><span class="fw-in">something</span></span>
+                <span class="fw" aria-hidden="true"><span class="fw-in">small.</span></span>
+            </h2>
+            <figure class="fin-photo f1 arch"><img src="jewellery1.jpg" alt="Bow necklace and earrings set in a pink gift box" loading="lazy"></figure>
+            <figure class="fin-photo f2 arch"><img src="jewellery5.jpg" alt="Gold infinity necklace on soft fabric" loading="lazy"></figure>
+            <figure class="fin-photo f3 arch"><img src="jewellery9.jpg" alt="Pink stone jewellery set with rose petals" loading="lazy"></figure>
+        </div>
+
+        <div class="finale-copy">
+            <img class="about-mark" src="logo-symbol-light.png" alt="">
+            <p>We choose fashion jewellery that adds a quiet finishing touch to your look, whether it is a normal day or a special one. Not sure what to pick? Message us on WhatsApp and we will help you choose.</p>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Questions about a piece?</h2>
+            <p>Send us a message and we will reply with sizes, availability and the final price.</p>
+            <a href="https://wa.me/923161216541" class="btn btn-light" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <img class="logo-mark" src="logo-symbol-light.png" alt="">
+        <p>&copy; 2026 Adeel Jewellers. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Cart drawer -->
+    <div class="scrim" id="scrim" hidden></div>
+    <aside class="drawer" id="drawer" aria-label="Your cart" aria-hidden="true">
+        <div class="drawer-head">
+            <h2>Your cart</h2>
+            <button class="drawer-close" id="cart-close" type="button" aria-label="Close cart">&times;</button>
+        </div>
+        <ul class="cart-list" id="cart-list"></ul>
+        <p class="cart-empty" id="cart-empty">Your cart is empty. Add a piece from the shop.</p>
+        <div class="drawer-foot">
+            <div class="cart-total"><span>Total</span><strong id="cart-total">Rs. 0</strong></div>
+            <button class="btn btn-light btn-block" id="checkout-btn" type="button" disabled>Proceed to Checkout</button>
+            <a class="wa-alt" id="wa-alt" href="https://wa.me/923161216541" target="_blank" rel="noopener">Or message on WhatsApp for help</a>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-overlay" id="checkout-overlay" hidden>
+        <div class="checkout-modal" role="dialog" aria-labelledby="checkout-title" aria-modal="true">
+            <div class="checkout-head">
+                <h2 id="checkout-title">Checkout</h2>
+                <button class="drawer-close" id="checkout-close" type="button" aria-label="Close checkout">&times;</button>
+            </div>
+            <div class="checkout-body">
+                <div class="checkout-summary" id="checkout-summary"></div>
+                <form id="checkout-form" class="checkout-form" novalidate>
+                    <div class="form-row">
+                        <label for="c-name">Full Name <span>*</span></label>
+                        <input type="text" id="c-name" name="name" required placeholder="Your full name" autocomplete="name">
+                    </div>
+                    <div class="form-row">
+                        <label for="c-phone">Phone / WhatsApp <span>*</span></label>
+                        <input type="tel" id="c-phone" name="phone" required placeholder="03XX XXXXXXX" autocomplete="tel">
+                    </div>
+                    <div class="form-row">
+                        <label for="c-city">City <span>*</span></label>
+                        <input type="text" id="c-city" name="city" required placeholder="e.g. Lahore, Karachi, Islamabad" autocomplete="address-level2">
+                    </div>
+                    <div class="form-row">
+                        <label for="c-address">Full Address <span>*</span></label>
+                        <textarea id="c-address" name="address" required rows="3" placeholder="House no, street, area, landmark" autocomplete="street-address"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="c-notes">Order Notes (optional)</label>
+                        <textarea id="c-notes" name="notes" rows="2" placeholder="Any special request or delivery note"></textarea>
+                    </div>
+                    <div class="payment-note">
+                        <strong>Payment:</strong> Cash on Delivery (COD)
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block" id="place-order-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success -->
+    <div class="success-overlay" id="success-overlay" hidden>
+        <div class="success-box">
+            <div class="success-icon">✓</div>
+            <h2>Order Received!</h2>
+            <p id="success-msg">Thank you. We have received your order. We will contact you shortly on WhatsApp to confirm.</p>
+            <div class="success-actions">
+                <a id="success-wa" class="btn btn-light" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+                <button type="button" class="btn btn-ghost" id="success-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="vendor/gsap.min.js"></script>
+    <script src="vendor/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
